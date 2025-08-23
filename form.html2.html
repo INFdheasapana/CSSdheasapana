@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+<style>
+    body{
+        background-color: #fbde9c;
+    }
+
+    h1,h2{
+        color: #481a1f;
+        text-align: center;
+        font-style: "Time New Roman";
+    }
+
+    .dlm-box {
+        width: 350px; /*lebar kotak*/
+        margin: 20px auto;
+        padding: 20px;
+        border: 4px solid #ea90ae; /*garis pinggir kotak*/
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    input, select, textarea {
+        width: 95%;
+        padding: 8px;
+        margin-top: 5px; /*jarak atas ke isi data dlm kotak*/
+        margin-bottom: 12px; /*jarak bawah ke isi data dlm kotak*/
+        border: 2px solid #ea90ea;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #481a1f;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px; /*jarak sebelah kanan ke isi data dlm kotak*/
+    }
+
+    button {
+        background-color: #f88949;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold; /*kalo mau boltt itu pake font weight*/
+    }
+
+    button:hover{
+        background-color: #c74e41; /*ini buat kalo ada kursor itu bisa berubah warna*/
+    }
+    
+</style>
 </head>
 <body>
     <h1>Buat Account Baru</h1>
+    <div class="dlm-box">
     <h2>Sign Up Form</h2>
 
     <form action="welcome.html2.html" method="get">
@@ -19,8 +70,8 @@
         <br><br>
 
         <label for="gd">Gender</label><br>
-        <input type="radio" name="gd" value="Male">Male <br>
-        <input type="radio" name="gd" value="Female">Female
+        <input type="radio" name="gd" value="Laki Laki">Laki Laki <br>
+        <input type="radio" name="gd" value="Perempuan">Perempuan
         <br><br>
 
         <label for="nt">Nationality</label><br>
@@ -41,7 +92,7 @@
         <textarea name="bio"  cols="30" rows="10"></textarea><br>
 
         <button type="submit">Sign Up</button>
-
     </form>
+    </div>
 </body>
 </html>
